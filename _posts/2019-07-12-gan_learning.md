@@ -1,7 +1,7 @@
 ---
 title: gan_learning
 date: 2019-07-12
-categories: Reinforcement-learning
+categories: Gan-Learning
 tags: 
 - gan networks
 ---
