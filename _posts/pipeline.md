@@ -1,5 +1,5 @@
 ---
-title: pipeline of our network
+title: Pipeline
 date: 2019-10-14
 categories: Experiment
 tags: 
