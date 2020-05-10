@@ -24,4 +24,12 @@ def preprocess():
         transform.Normalize(**_imagenet_stats)
     ]
     return transform.Compose(transpose_list)	#按照顺序依次执行图像处理的步骤
+
+# 通常并不会做这样的一个处理，但是在gan等应用中，最终生成的图像是[-1,1]之间的，但是我们需要将生成的图像进行可视化，这就需要将经过归一化的图像再转换回去
+def tensor2img(tensor):
+    # 图像的三个通道分别进行处理
+    for i in range(3):
+        tensor[:, i, :, :] = tensor[:, i, :, :] * __imagenet_stats['std'][i] + imagenet_stats['mean'][i]
+    return tensor
+    
 ```
