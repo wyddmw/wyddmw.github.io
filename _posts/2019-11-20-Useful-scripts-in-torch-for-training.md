@@ -114,3 +114,9 @@ self.optimizer_G = torch.optim.Adam(filter(lambda p:p.requires_grad,self.netG.pa
 
 
 
+## Check which device the model is running
+
+```python
+print(data.device)
+```
+
