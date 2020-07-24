@@ -1,5 +1,8 @@
 # Pytorch Learning
+<!-- more -->
+
 ## 定义网络
+
 　　定义网络的时候，需要继承nn.Module，病实现它的forward方法，把网络中具有可学习参数的层放在构造函数__init__中。如果某一层不具有可学习的参数，则既可以放在构造函数中也可以不放在构造函数，不建议放在其中，在forward中使用nn.functional进行代替。<br>
 
 ```python
