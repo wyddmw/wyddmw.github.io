@@ -6,7 +6,8 @@ tags:
 - Linux
 ---
 　　学习使用dockerfile对镜像进行构建。
-<!--more-->
+<!-- more -->
+
 　　首先是dockerfile的写法，可以直接在dockerfile中定义需要使用的软件等，可以从宿主机上现有的docker镜像直接进行修改。<br>
 
 ```dockerfile
