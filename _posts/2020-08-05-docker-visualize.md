@@ -28,7 +28,7 @@ $ # 这个时候需要看到输出：access control disabled, clients can connec
 $ sudo docker run -itd --name container_id \ 
  -v /home/:/home \
  -v /tmp/.X11-unix:/tmp/.X11-unix \   	#共享本地unix端口
- -e DISPLAY=unix$DISPLAY \              #修改环境变量DISPLAY
+ -e DISPLAY=:0.0 \              #修改环境变量DISPLAY
  -e GDK_SCALE \     
  -e GDK_DPI_SCALE \
  image_id
